@@ -9,6 +9,33 @@
 
 
 }
+header{
+    height: 5vh;
+    background-color: brown;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-right: 2em;
+
+
+
+}
+
+
+header nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+
+
+
+}
 .contenedor{
     gap: 0.5rem;
     display: grid;
@@ -20,6 +47,7 @@
     }
 
 .contenedor div{
+    margin-top: 10%;
     background-color: rgb(128, 110, 69);
     height: auto;
     border-radius: 0.5rem;
