@@ -5,18 +5,22 @@
     /* border: solid 1px red; */
 }
 .body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(242, 242, 242, 0.933);
     font-family: sans-serif;
     margin: 0px;
 }
 .h2-mobile{
 display: none;
 }
+
+
+
 header{
+border: solid 1.5px black;
+background-color: rgb(255, 29, 37);
 display: flex;
 height: 70px;
 justify-content: space-between;
-background-color: rgb(223, 94, 47);
 align-items: center;
 }
 #btn_menu{
@@ -27,10 +31,14 @@ header label{
 }
 .logo{
 display: flex;
+flex-direction: row;
 align-items: center;
 }
+
 .logo h2{
+    font-size: 2vw;
     margin-bottom: 0;
+
 }
 .logo img{
     height: 50px;
@@ -40,19 +48,20 @@ align-items: center;
 header  a{
     color: black;
     text-decoration: none;
-    font-weight: 400;
+    /* font-weight: 300; */
 
 }
 header a:hover{
     color: white;
 }
 header nav a{
+    font-size: 2vw;
     margin: 0.4rem;
     padding: 5px;
 
 }
 .contenedor{
-    margin-top: 85px;
+    margin-top: 1vw;
     gap: 0.5rem;
     display: grid;
     grid-template-columns:repeat(4,1fr);
@@ -61,8 +70,8 @@ header nav a{
     margin-right: 1rem;
     }
 .contenedor div{
-    margin-top: 10%;
-    background-color: rgb(128, 110, 69);
+    /* margin-top: 2vh; */
+    background-color: rgb(255, 255, 255);
     height: auto;
     border-radius: 0.5rem;
 }
@@ -75,48 +84,42 @@ header nav a{
     overflow: hidden;
 }
 .card h2{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: sans-serif;
 }
 .card p{
     font-family: sans-serif;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-align: center
 }
-footer {
-    background-color: aliceblue;
+.footer {
+    background-color: rgb(0, 0, 0);
 }
-footer h1{
-    color: rgb(61, 86, 107);
+.footer-texto{
+    font-size: 1.5vw;
     text-align: center;
+    color: aliceblue;
+    align-items: center;
 }
 /* media query desde mobile hacia desktop - desktop */
     @media (max-width: 1024px){
         .h2-mobile{
 display: none;
         }
-        header nav a{
-            margin: 0.1rem;
-        }
+
         .contenedor{
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(3, auto);
         }
     }
-    .logo h2{
-        font-size: 2.4vw;
-    }
     header  a{
         font-size: 2.2vw;
+        font-size: 20px;
         padding: 2px;
     }
     /* media query desde desktop hacia mobile - tablet */
 @media (max-width: 768px){
-    .h2-mobile{
-        font-size: 130%;
-        font-weight: 600;
-    }
     .logo h2{
         display: none;
     }
@@ -124,26 +127,38 @@ display: none;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3, auto);
     }
+    header{
+        border: none
+    }
+
     header nav{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    header nav a{
+        font-size: 4vw;
+        margin: 0.4rem;
+        padding: 5px;
+    
+    }
     header label{
         display: block;
-        position:relative;
+        position:relative
     }
     header label img{
         width: 50px;
         margin-left: 10px;
     }
     .menu{
-        position: absolute !important; 
+        z-index: 1;
+        position: absolute ; 
         top: 70px;
-        background-color: rgb(223, 94, 47);
+        background-color: rgb(255, 29, 37);
         width: 100vw;
         visibility: hidden;
     }
+
     #btn_menu:checked ~  .menu{
         visibility: visible;
     }
