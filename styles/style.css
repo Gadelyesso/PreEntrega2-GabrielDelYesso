@@ -93,8 +93,13 @@ header nav a{
     color: rgb(0, 0, 0);
     text-align: center
 }
-.footer {
-    background-color: rgb(0, 0, 0);
+.footer{
+    background-color:  rgb(43,43,43);
+}
+footer h2{
+    color: aliceblue;
+    font-size: 1.5vh;
+text-align: center;
 }
 .footer-texto{
     font-size: 1.5vw;
@@ -102,6 +107,12 @@ header nav a{
     color: aliceblue;
     align-items: center;
 }
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* media query desde mobile hacia desktop - desktop */
     @media (max-width: 1024px){
         .h2-mobile{
@@ -154,9 +165,14 @@ display: none;
         z-index: 1;
         position: absolute ; 
         top: 70px;
-        background-color: rgb(255, 29, 37);
+        background-color: rgb(43,43,43);
         width: 100vw;
         visibility: hidden;
+    }
+
+    footer h2{
+        font-size: 0.9vh;
+    text-align: center;
     }
 
     #btn_menu:checked ~  .menu{
