@@ -23,6 +23,7 @@ height: 70px;
 justify-content: space-between;
 align-items: center;
 }
+
 #btn_menu{
     display: none;
 }
@@ -54,11 +55,9 @@ header  a{
 header a:hover{
     color: white;
 }
-header nav a{
-    font-size: 2vw;
-    margin: 0.4rem;
-    padding: 5px;
 
+.menu{
+    padding-right: 1vw;
 }
 .contenedor{
     margin-top: 1vw;
@@ -94,7 +93,7 @@ header nav a{
     text-align: center
 }
 .footer{
-    background-color:  rgb(43,43,43);
+    background-color:  rgb(67, 67, 67);
 }
 footer h2{
     color: aliceblue;
@@ -113,7 +112,20 @@ text-align: center;
     justify-content: center;
 }
 
-/* media query desde mobile hacia desktop - desktop */
+.form{
+
+    padding-top: 0.5rem;
+    background-color: black;
+}
+.tasa{
+    color: aliceblue;
+    background-color: black ;
+padding-top: 5rem;
+padding-bottom: 5rem;
+    text-align: center;
+}
+
+/* media query tablet*/
     @media (max-width: 1024px){
         .h2-mobile{
 display: none;
@@ -124,12 +136,11 @@ display: none;
             grid-template-rows: repeat(3, auto);
         }
     }
-    header  a{
-        font-size: 2.2vw;
-        font-size: 20px;
+    header nav  a{
+        font-size: 2vw;
         padding: 2px;
     }
-    /* media query desde desktop hacia mobile - tablet */
+    /* media query mobile*/
 @media (max-width: 768px){
     .logo h2{
         display: none;
@@ -148,7 +159,7 @@ display: none;
         align-items: center;
     }
     header nav a{
-        font-size: 4vw;
+        font-size: 3vw;
         margin: 0.4rem;
         padding: 5px;
     
@@ -165,7 +176,7 @@ display: none;
         z-index: 1;
         position: absolute ; 
         top: 70px;
-        background-color: rgb(43,43,43);
+        background-color: rgb(255, 29, 37);
         width: 100vw;
         visibility: hidden;
     }
@@ -178,6 +189,7 @@ display: none;
     #btn_menu:checked ~  .menu{
         visibility: visible;
     }
+
 
 
 }
