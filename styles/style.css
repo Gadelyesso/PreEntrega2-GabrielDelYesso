@@ -225,6 +225,13 @@ display: none;
     #btn_menu:checked ~  .menu{
         visibility: visible;
     }
+    .somos{
+        text-align: center; !important
+        padding: 2%;
+    }
+    
+
+    
 
 
 
