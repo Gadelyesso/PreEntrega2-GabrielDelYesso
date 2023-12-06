@@ -68,6 +68,7 @@ header a:hover{
     margin-left: 1rem;
     margin-right: 1rem;
     }
+
 .contenedor div{
     /* margin-top: 2vh; */
     background-color: rgb(255, 255, 255);
@@ -124,6 +125,41 @@ padding-top: 5rem;
 padding-bottom: 5rem;
     text-align: center;
 }
+.somos{
+    text-align: center;
+    padding: 2%;
+}
+
+.nosotros-foto{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.nosotros-foto img{
+width: 50%;
+height: 50%;
+border-radius: 50%;
+}
+
+.nosotros-p{
+    margin-top: 5%;
+    background-color: rgb(43,43,43);
+    color: aliceblue;
+}
+
+.contacto{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#mapa{
+    height: 40vh;
+    width: 80%;
+}
+
 
 /* media query tablet*/
     @media (max-width: 1024px){
