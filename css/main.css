@@ -18,16 +18,33 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+}
 header nav a {
-  font-size: 1.3vw;
-  margin: 0.4rem;
-  padding: 5px;
+  font-size: 1.5vw;
+  margin: 1vw;
+  padding: 1px;
+}
+@media screen and (max-width: 767px) {
+  header nav a {
+    margin: 0;
+    font-size: 2.2vw;
+  }
 }
 header #btn_menu {
   display: none;
 }
 header .menu {
   padding-right: 1vw;
+}
+@media screen and (max-width: 767px) {
+  header .menu {
+    padding: 0;
+  }
 }
 header label {
   display: none;
@@ -44,15 +61,31 @@ header .logo {
   flex-direction: row;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  header .logo {
+    flex-direction: column;
+  }
+}
 header .logo img {
   margin-left: 1vw;
   height: 50px;
   margin-right: 10px;
   border-radius: 40%;
 }
+@media screen and (max-width: 767px) {
+  header .logo img {
+    flex-direction: column;
+    margin-top: 1vh;
+  }
+}
 header .logo h2 {
   font-size: 2vw;
   margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  header .logo h2 {
+    margin-top: 1vh;
+  }
 }
 
 .header {
@@ -75,13 +108,13 @@ main .contenedor {
   /* media query tablet */
   /* media query mobile */
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1023px) {
   main .contenedor {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   main .contenedor {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -111,7 +144,7 @@ main .contenedor .card p {
   margin: 0;
   font-size: 0.8em;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1023px) {
   main .contenedor .card h2 {
     font-size: 1.5em;
   }
@@ -133,26 +166,6 @@ main .contenedor div {
 main .contenedor img {
   width: 100%;
   height: 100%;
-}
-
-.footer {
-  background-color: rgb(67, 67, 67);
-}
-.footer h2 {
-  color: aliceblue;
-  font-size: 1.5vh;
-  text-align: center;
-}
-.footer .footer-texto {
-  font-size: 1.5vw;
-  text-align: center;
-  color: aliceblue;
-  align-items: center;
-}
-.footer .footer-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .form {
@@ -193,6 +206,26 @@ main .contenedor img {
 .contacto #mapa {
   height: 40vh;
   width: 80%;
+}
+
+.footer {
+  background-color: rgb(67, 67, 67);
+}
+.footer h2 {
+  color: aliceblue;
+  font-size: 1.5vh;
+  text-align: center;
+}
+.footer .footer-texto {
+  font-size: 1.5vw;
+  text-align: center;
+  color: aliceblue;
+  align-items: center;
+}
+.footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
