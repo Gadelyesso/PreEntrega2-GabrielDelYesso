@@ -189,12 +189,21 @@ main .contenedor img {
   width: 50%;
   height: 50%;
   border-radius: 50%;
+  margin-top: 4vw;
 }
 
 .nosotros-p {
   margin-top: 5%;
   background-color: rgb(43, 43, 43);
   color: aliceblue;
+}
+
+.somos h1 {
+  text-align: center;
+  margin-top: 4vh;
+}
+.somos p {
+  text-align: center;
 }
 
 .contacto {
