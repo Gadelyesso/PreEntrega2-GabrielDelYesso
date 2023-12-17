@@ -18,16 +18,18 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  header {
+    border: none;
+  }
+}
 header label {
   display: none;
 }
 @media screen and (max-width: 767px) {
   header label {
     display: block;
-    position: relative;
-  }
-  header label .menu-hamburguesa {
-    margin: 20px;
+    margin-left: 15px;
   }
 }
 header .menu {
@@ -40,11 +42,6 @@ header .logo-img {
   height: 50px;
   border-radius: 40%;
   margin: 5px;
-}
-@media screen and (max-width: 767px) {
-  header .logo-img {
-    margin-right: 15px;
-  }
 }
 header #btn_menu:checked ~ .menu {
   visibility: visible;
@@ -70,7 +67,7 @@ header nav a {
   header .menu {
     z-index: 1;
     position: absolute;
-    top: 70px;
+    top: 60px;
     background-color: rgb(255, 29, 37);
     width: 100vw;
     visibility: hidden;

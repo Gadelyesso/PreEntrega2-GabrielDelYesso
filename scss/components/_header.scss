@@ -6,16 +6,16 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @include mobile {
+        border: none
+    }
+
     label {
         display: none;
 
         @include mobile {
-            .menu-hamburguesa {
-                margin: 20px;
-            }
-
             display: block;
-            position:relative;
+            margin-left: 15px;
         }
     }
 
@@ -31,9 +31,6 @@ header {
         height: 50px;
         border-radius: 40%;
         margin: 5px;
-        @include mobile{
-            margin-right: 15px;
-        }
     }
 
 
@@ -48,12 +45,15 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+
         }
-        a{
+
+        a {
             margin-right: 10px;
             font-size: 1.4vw;
             padding: 5px;
-            @include mobile{
+
+            @include mobile {
                 font-size: 1.5rem;
             }
         }
@@ -64,7 +64,7 @@ header {
         @include mobile {
             z-index: 1;
             position: absolute;
-            top: 70px;
+            top: 60px;
             background-color: rgb(255, 29, 37);
             width: 100vw;
             visibility: hidden;
