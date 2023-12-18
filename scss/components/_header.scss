@@ -1,13 +1,10 @@
 header{
+        @include flex(flex,row, wrap,space-between,center);
         width: 100vw;
-        border: solid 1.5px black;
-        background-color: rgb(255, 29, 37);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        border: solid 1.5px map-get($colores,"black");
+        background-color: map-get($colores,"red");
         @include mobile{
         border: none
-        
     }
     label{
         display: none;
@@ -32,9 +29,7 @@ header{
     }
     nav {
         @include mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+            @include flex(flex,column,wrap,center,center)
         }
         a {
         margin-right: 10px;
@@ -50,22 +45,20 @@ header{
         z-index: 1;
         position: absolute;
         top: 60px;
-        background-color: rgb(255, 29, 37);
+        background-color: map-get($colores,"red");
         width: 100vw;
         visibility: hidden;
         }
     }
     a{
-        color: black;
+        color: map-get($colores,"black");
         text-decoration: none;
         &:hover{
-        color: white;
+        color: map-get($colores,"white");
         }
     }
     .logo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex(flex,row,wrap,center,center);
         .texto-logo{
         font-size: 2vw;
         margin-bottom: 0px;

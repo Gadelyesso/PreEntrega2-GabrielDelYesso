@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
 margin: 1.1em;
-    border: solid 1px black;
-    background-color:  rgb(67, 67, 67);
+    border: solid 1px map-get($colores,"black");
+    background-color: map-get($colores,"grey");
     border-radius: 10px;
 
 
     h1{
-        color: aliceblue;
+        color: map-get($colores,"white");
         text-align: center;
         margin-top: 4vh;
         margin-bottom: 4vh;
@@ -27,8 +27,8 @@ margin: 1.1em;
 .nosotros-p{
     margin-top: 10%;
         padding: 5%;
-        background-color: rgb(43,43,43);
-        color: aliceblue;
+        background-color: map-get($colores,"grey");
+        color: map-get($colores,"white");
         p{
         text-align: center;
         }
