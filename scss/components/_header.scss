@@ -1,7 +1,7 @@
 header{
         @include flex(flex,row, wrap,space-between,center);
         width: 100vw;
-        border: solid 1.5px map-get($colores,"black");
+        border-bottom: solid 1.5px map-get($colores,"black");
         background-color: map-get($colores,"red");
         @include mobile{
         border: none
@@ -14,7 +14,7 @@ header{
         }
     }
     .menu{
-        padding-right: 1vw;
+        border-right: 1vw;
     }
     #btn_menu{
         display: none;
@@ -28,11 +28,12 @@ header{
         visibility: visible;
     }
     nav {
+        margin: 0;
         @include mobile{
             @include flex(flex,column,wrap,center,center)
         }
         a {
-        margin-right: 10px;
+        // margin-right: 10px;
         font-size: 1.4vw;
         padding: 5px;
         @include mobile{
@@ -67,5 +68,11 @@ header{
         display: none;
         }
         }
+        img{
+            margin: 10px;
+        }
+    }
+    .button{
+        border: 0 !important;
     }
 }
