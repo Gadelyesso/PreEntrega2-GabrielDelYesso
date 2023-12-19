@@ -6,7 +6,7 @@
 
 .body {
   width: 100vw;
-  background-color: rgba(242, 242, 242, 0.933);
+  background-color: rgba(255, 243, 221, 0.933);
   font-family: sans-serif;
   margin: 0px;
 }
@@ -222,6 +222,13 @@ main .contenedor img {
   margin: 0;
 }
 
+.nosotros-section {
+  border-radius: 1%;
+  background-color: beige;
+  margin: 0.2%;
+  border: solid 1px rgb(29, 27, 27);
+}
+
 .somos {
   display: flex;
   justify-content: center;
@@ -247,13 +254,22 @@ main .contenedor img {
   height: 20%;
   padding-bottom: 5%;
   padding-top: 5%;
+  border-radius: 50%;
 }
 
 .div-nosotros-texto {
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
   background-color: rgb(67, 67, 67);
 }
 .div-nosotros-texto p {
+  padding: 0.1%;
   color: rgb(248, 245, 245);
+}
+.div-nosotros-texto p span {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .contacto {
