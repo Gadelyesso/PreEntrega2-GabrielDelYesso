@@ -1,7 +1,9 @@
 
 .form{
-    padding-top: 0;
     background-color: map-get($colores,"black");
+    @include mobile{
+        padding-top: 10%;
+    }
 }
 .tasa{
     color: map-get($colores,"white");

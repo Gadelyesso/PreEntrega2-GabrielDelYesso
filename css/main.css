@@ -198,8 +198,12 @@ main .contenedor img {
 }
 
 .form {
-  padding-top: 0;
   background-color: rgb(12, 12, 12);
+}
+@media screen and (max-width: 767px) {
+  .form {
+    padding-top: 10%;
+  }
 }
 
 .tasa {
