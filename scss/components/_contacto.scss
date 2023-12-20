@@ -3,5 +3,14 @@
     align-items: center;
     margin-bottom: 5em;
     padding-top: 5em;
-    margin-top: 5em;
+    margin-top: 0.2em;
+    @include mobile{
+        margin-top: 0.2em;
+    }
+}
+#mapa{
+    width: 80vw;
+    @include mobile{
+        width: 80vw;
+    }
 }

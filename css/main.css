@@ -34,7 +34,7 @@ header label {
     margin-left: 15px;
   }
   header label .menu-hamburguesa {
-    width: 45px;
+    width: 35px;
   }
 }
 header .menu {
@@ -281,7 +281,21 @@ main .contenedor img {
   align-items: center;
   margin-bottom: 5em;
   padding-top: 5em;
-  margin-top: 5em;
+  margin-top: 0.2em;
+}
+@media screen and (max-width: 767px) {
+  .contacto {
+    margin-top: 0.2em;
+  }
+}
+
+#mapa {
+  width: 80vw;
+}
+@media screen and (max-width: 767px) {
+  #mapa {
+    width: 80vw;
+  }
 }
 
 .footer {
