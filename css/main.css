@@ -33,6 +33,9 @@ header label {
     display: block;
     margin-left: 15px;
   }
+  header label .menu-hamburguesa {
+    width: 45px;
+  }
 }
 header .menu {
   border-right: 1vw;
@@ -49,10 +52,11 @@ header #btn_menu:checked ~ .menu {
   visibility: visible;
 }
 header nav {
-  margin: 0;
+  padding-right: 4%;
 }
 @media screen and (max-width: 767px) {
   header nav {
+    row-gap: 20px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;

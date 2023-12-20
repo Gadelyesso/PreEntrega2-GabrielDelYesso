@@ -9,6 +9,9 @@ header{
     label{
         display: none;
         @include mobile{
+            .menu-hamburguesa{
+                width: 45px;
+            }
         display: block;
         margin-left: 15px;
         }
@@ -28,8 +31,9 @@ header{
         visibility: visible;
     }
     nav {
-        margin: 0;
+        padding-right: 4%;
         @include mobile{
+            row-gap: 20px;
             @include flex(flex,column,wrap,center,center)
         }
         a {
