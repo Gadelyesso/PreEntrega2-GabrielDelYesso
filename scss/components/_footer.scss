@@ -1,5 +1,5 @@
 .footer{
-    width: 100vw;
+    width: 100%;
     background-color: map-get($colores,"grey");
     margin-top: 1em;
     h2{
@@ -15,6 +15,6 @@
     }
     .footer-links{
         @include flex(flex,row,wrap,center,center);
-        gap: 2em;
+        gap: 1em;
     }
 }
